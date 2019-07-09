@@ -3,21 +3,20 @@
 -- CSCI 3308
 
 /* 1. */
-select lastname, firstname, country as "Country" from employees                                                      
+select lastname, firstname, country as "Country" from nwEmployees                                                      
 where country!='USA' and hiredate <= '2014-7-8' order by lastname, firstname asc;
 /* 2 */
-select productid, productname, unitsinstock, unitprice from products where unitsinstock <= reorderlevel and unitsinstock > 0; 
+select productid, productname, unitsinstock, unitprice from nwProducts where unitsinstock <= reorderlevel and unitsinstock > 0; 
 /* 3 */
-select productname, unitprice from products where unitprice = (select max(unitprice) from products) 
-or unitprice = (select min(unitprice) from products);
+select productname, unitprice from nwProducts where unitprice = (select max(unitprice) from nwProducts);
 /* 4 */
 select productid, productname, unitsinstock * unitprice as "Total Inventory Value" 
-from products where unitsinstock * unitprice > 2000 order by "Total Inventory Value" desc;
+from nwProducts where unitsinstock * unitprice > 2000 order by "Total Inventory Value" desc;
 /* 5 */
-select shipcountry, count(shipcountry) from orders where shipcountry != 'USA' and shippeddate >= '2013/09/01' and 
+select shipcountry, count(shipcountry) from nwOrders where shipcountry != 'USA' and shippeddate >= '2013/09/01' and 
 shippeddate < '2013/10/01' group by shipcountry order by shipcountry asc;
 /* 6 */
-select customerid, companyname from orders group by customerid, shipname having count(customerid) >= 20;
+select nwOrders.customerid, companyname from nwOrders, nwCustomers where nwOrders.customerid = nwCustomers.customerid group by customerid having count(customerid) > 20;
 /* 7 */
 select sum(unitprice * unitsinstock) as "Total Inventory Value", supplierid from products group by supplierid having count(supplierid) > 3;
 /* 8 */

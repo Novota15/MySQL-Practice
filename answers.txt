@@ -2,3 +2,91 @@ Assignment 2 Queries
 Grant Novota
 CSCI 3308
 
+1.
++-----------+-----------+---------+
+| lastname  | firstname | Country |
++-----------+-----------+---------+
+| Buchanan  | Steven    | UK      |
+| Dodsworth | Anne      | UK      |
+| King      | Robert    | UK      |
+| Suyama    | Michael   | UK      |
++-----------+-----------+---------+
+
+2.
++-----------+----------------------------+--------------+-----------+
+| productid | productname                | unitsinstock | unitprice |
++-----------+----------------------------+--------------+-----------+
+|         2 | Chang                      |           17 |     19.00 |
+|         3 | Aniseed Syrup              |           13 |     10.00 |
+|        11 | Queso Cabrales             |           22 |     21.00 |
+|        21 | Sir Rodney's Scones        |            3 |     10.00 |
+|        30 | Nord-Ost Matjeshering      |           10 |     25.89 |
+|        32 | Mascarpone Fabioli         |            9 |     32.00 |
+|        37 | Gravad lax                 |           11 |     26.00 |
+|        43 | Ipoh Coffee                |           17 |     46.00 |
+|        45 | Rogede sild                |            5 |      9.50 |
+|        48 | Chocolade                  |           15 |     12.75 |
+|        49 | Maxilaku                   |           10 |     20.00 |
+|        56 | Gnocchi di nonna Alice     |           21 |     38.00 |
+|        64 | Wimmers gute Semmelknödel  |           22 |     33.25 |
+|        66 | Louisiana Hot Spiced Okra  |            4 |     17.00 |
+|        68 | Scottish Longbreads        |            6 |     12.50 |
+|        70 | Outback Lager              |           15 |     15.00 |
+|        74 | Longlife Tofu              |            4 |     10.00 |
++-----------+----------------------------+--------------+-----------+
+
+3.
++----------------+-----------+
+| productname    | unitprice |
++----------------+-----------+
+| Côte de Blaye  |    263.50 |
++----------------+-----------+
+
+4.
++-----------+------------------------------+-----------------------+
+| productid | productname                  | Total Inventory Value |
++-----------+------------------------------+-----------------------+
+|         6 | Grandma's Boysenberry Spread |               3000.00 |
+|         9 | Mishi Kobe Niku              |               2813.00 |
+|        12 | Queso Manchego La Pastora    |               3268.00 |
+|        18 | Carnarvon Tigers             |               2625.00 |
+|        20 | Sir Rodney's Marmalade       |               3240.00 |
+|        22 | Gustaf's Knäckebröd          |               2184.00 |
+|        27 | Schoggi Schokolade           |               2151.10 |
+|        36 | Inlagd Sill                  |               2128.00 |
+|        38 | Côte de Blaye                |               4479.50 |
+|        40 | Boston Crab Meat             |               2263.20 |
+|        55 | Pâté chinois                 |               2760.00 |
+|        59 | Raclette Courdavault         |               4345.00 |
+|        61 | Sirop d'érable               |               3220.50 |
++-----------+------------------------------+-----------------------+
+
+5.
++-------------+--------------------+
+| shipcountry | count(shipcountry) |
++-------------+--------------------+
+| Brazil      |                  4 |
+| France      |                  3 |
+| Germany     |                  1 |
+| Ireland     |                  1 |
+| Italy       |                  2 |
+| Mexico      |                  3 |
+| Spain       |                  2 |
+| Sweden      |                  1 |
+| Venezuela   |                  1 |
++-------------+--------------------+
+
+6.
+
+
+
+
+
+
+
+
+
+
+
+
+
