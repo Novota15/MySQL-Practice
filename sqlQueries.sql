@@ -16,7 +16,7 @@ from nwProducts where unitsinstock * unitprice > 2000 order by "Total Inventory 
 select shipcountry, count(shipcountry) from nwOrders where shipcountry != 'USA' and shippeddate >= '2013/09/01' and 
 shippeddate < '2013/10/01' group by shipcountry order by shipcountry asc;
 /* 6 */
-select nwOrders.customerid, companyname from nwOrders, nwCustomers where nwOrders.customerid = nwCustomers.customerid group by customerid having count(customerid) > 20;
+select customerid, companyname from nwOrders inner join nwCustomers on nwOrders.customerid = nwCustomers.customerid where nwOrders.customerid = nwCustomers.customerid group by customerid having count(customerid) > 20;
 /* 7 */
 select sum(unitprice * unitsinstock) as "Total Inventory Value", supplierid from products group by supplierid having count(supplierid) > 3;
 /* 8 */
